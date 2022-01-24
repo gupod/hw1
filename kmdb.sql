@@ -99,15 +99,54 @@ DROP table if exists top_cast;
 
 CREATE table movies(
     id integer primary key autoincrement,
-    title text,
-    year integer,
-    mpaa text,
-    director text
+    title TEXT,
+    year INTEGER,
+    mpaa TEXT,
+    director TEXT
 );
 
 CREATE table top_cast(
     id integer primary key autoincrement,
-    title text,
+    title TEXT,
     author text,
     character text
+);
+
+INSERT into movies(
+    title,
+    year,
+    mpaa,
+    director
+)
+VALUES (
+    "Batman Begins",
+    2005,
+    "PG-13",
+    "Christopher Nolan"
+);
+
+INSERT into movies(
+    title,
+    year,
+    mpaa,
+    director
+)
+VALUES (
+    "The Dark Night",
+    2008,
+    "PG-13",
+    "Christopher Nolan"
+);
+
+INSERT into movies(
+    title,
+    year,
+    mpaa,
+    director
+)
+VALUES (
+    "The Dark Night Rises",
+    2012,
+    "PG-13",
+    "Christopher Nolan"
 );

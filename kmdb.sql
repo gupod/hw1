@@ -176,17 +176,126 @@ VALUES (
     "Rachel Dawes"
 );
 
--- Batman Begins          Gary Oldman           Commissioner Gordon
--- The Dark Knight        Christian Bale        Bruce Wayne
--- The Dark Knight        Heath Ledger          Joker
--- The Dark Knight        Aaron Eckhart         Harvey Dent
--- The Dark Knight        Michael Caine         Alfred
--- The Dark Knight        Maggie Gyllenhaal     Rachel Dawes
--- The Dark Knight Rises  Christian Bale        Bruce Wayne
--- The Dark Knight Rises  Gary Oldman           Commissioner Gordon
--- The Dark Knight Rises  Tom Hardy             Bane
--- The Dark Knight Rises  Joseph Gordon-Levitt  John Blake
--- The Dark Knight Rises  Anne Hathaway         Selina Kyle
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"Batman Begins",
+"Gary Oldman",
+"Commissioner Gordon"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"The Dark Knight",
+"Christian Bale",
+"Bruce Wayne"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"The Dark Knight",
+"Heath Ledger",
+"Joker"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"the Dark Knight",
+"Aaron Eckhart",
+"Harvey Dent"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"The Dark Knight",
+"Michael Caine",
+"Alfred"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"The Dark Knight",
+"Maggie Gyllenhaal",
+"Rachel Dawes"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"The Dark Knight Rises",
+"Christian Bale",
+"Bruce Wayne"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"The Dark Knight Rises",
+"Gary Oldman",
+"Commissioner Gordon"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"The Dark Knight Rises",
+"Tom Hardy",             
+"Bane"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"The Dark Knight Rises",
+"Joseph Gordon-Levitt",  
+"John Blake"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+"The Dark Knight Rises",
+"Anne Hathaway",
+"Selina Kyle"
+);
 
 -- Prints a header for the movies output
 .print "Movies"

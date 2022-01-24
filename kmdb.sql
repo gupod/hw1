@@ -69,33 +69,11 @@
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
 
+DROP table if exists movies;
+DROP table if exists cast;
+
 -- Create new tables, according to your domain model
 -- TODO!
-
--- Insert data into your database that reflects the sample data shown above
--- Use hard-coded foreign key IDs when necessary
--- TODO!
-
--- Prints a header for the movies output
-.print "Movies"
-.print "======"
-.print ""
-
--- The SQL statement for the movies output
--- TODO!
-
--- Prints a header for the cast output
-.print ""
-.print "Top Cast"
-.print "========"
-.print ""
-
-
--- The SQL statement for the cast output
--- TODO!
-
-DROP table if exists movies;
-DROP table if exists top_cast;
 
 CREATE table movies(
     id integer primary key autoincrement,
@@ -105,12 +83,16 @@ CREATE table movies(
     director TEXT
 );
 
-CREATE table top_cast(
+CREATE table cast(
     id integer primary key autoincrement,
     title TEXT,
     author text,
     character text
 );
+
+-- Insert data into your database that reflects the sample data shown above
+-- Use hard-coded foreign key IDs when necessary
+-- TODO!
 
 INSERT into movies(
     title,
@@ -150,3 +132,79 @@ VALUES (
     "PG-13",
     "Christopher Nolan"
 );
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+    "Batman Begins",
+    "Christian Bale",
+    "Bruce Wayne"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+    "Batman Begins",
+    "Michael Caine",
+    "Alfred"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES ("Batman Begins",
+        "Liam Neeson",
+        "Ra's Al Ghul"
+);
+
+INSERT into cast(
+    title,
+    author,
+    character
+)
+VALUES (
+    "Batman Begins",
+    "Katie Holmes",
+    "Rachel Dawes"
+);
+
+-- Batman Begins          Gary Oldman           Commissioner Gordon
+-- The Dark Knight        Christian Bale        Bruce Wayne
+-- The Dark Knight        Heath Ledger          Joker
+-- The Dark Knight        Aaron Eckhart         Harvey Dent
+-- The Dark Knight        Michael Caine         Alfred
+-- The Dark Knight        Maggie Gyllenhaal     Rachel Dawes
+-- The Dark Knight Rises  Christian Bale        Bruce Wayne
+-- The Dark Knight Rises  Gary Oldman           Commissioner Gordon
+-- The Dark Knight Rises  Tom Hardy             Bane
+-- The Dark Knight Rises  Joseph Gordon-Levitt  John Blake
+-- The Dark Knight Rises  Anne Hathaway         Selina Kyle
+
+-- Prints a header for the movies output
+.print "Movies"
+.print "======"
+.print ""
+
+-- The SQL statement for the movies output
+-- TODO!
+
+select title,year,mpaa,director from movies;
+
+-- Prints a header for the cast output
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
+
+-- The SQL statement for the cast output
+-- TODO!
+
+select title,author,character from cast;

@@ -93,3 +93,21 @@
 
 -- The SQL statement for the cast output
 -- TODO!
+
+DROP table if exists movies;
+DROP table if exists top_cast;
+
+CREATE table movies(
+    id integer primary key autoincrement,
+    title text,
+    year integer,
+    mpaa text,
+    director text
+);
+
+CREATE table top_cast(
+    id integer primary key autoincrement,
+    title text,
+    author text,
+    character text
+);
